@@ -88,6 +88,7 @@ ul.products2 li{
     box-sizing: border-box;
     margin-bottom: 30px;
 }
+
 ul.products li img, ul.products2 li img{
     max-width: 100%;
     height: auto;
@@ -110,7 +111,7 @@ ul.products li .product-top a.buy-now, ul.products2 li .product-top a.buy-now{
     text-decoration: none;
     text-align: center;
     display: block;
-    background-color: #446084;
+    background-color: #b8d8e0;
     color: #fff;
     padding: 10px 0px;
     position: absolute;
@@ -146,18 +147,11 @@ ul.products li .product-info .product-name2, ul.products2 li .product-info .prod
     padding-left: 20%;
 }
 
-.sale1 {
-    text-align: right;
-    padding-left: 20%;
-}
+    
 .sale2 {
-    text-transform: uppercase;
-    color: white;
-    background-color: #343a40;
+   
     text-decoration: none;
-    padding: 6px 10px;
-    display: inline-block;
-    text-align: right;
+    
 }
 
 /*---- Phát ----------------------*/
@@ -190,7 +184,7 @@ ul.products li .product-info .product-name2, ul.products2 li .product-info .prod
 }
 
 /* refresh-right */
-.refresh-title {
+.refresh-title1 {
     text-transform: capitalize;
     font-size: 2.4rem;
     font-weight: 500;
@@ -278,7 +272,7 @@ ul.T_SHIRT_products li .product-top a.buy-now{
     text-decoration: none;
     text-align: center;
     display: block;
-    background-color: #446084;
+    background-color: #b8d8e0;
     color: #fff;
     padding: 10px 0px;
     position: absolute;

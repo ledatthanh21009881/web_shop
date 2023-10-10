@@ -38,11 +38,24 @@ h1{
     height: 40%;
     padding-top: 5px;
     padding-left: 15%;
+    transition-duration: .3s;
+
+}
+#logo img:hover{
+    color: #ffee10;
+    box-shadow: 0 0 35px #ffee10;
+    text-shadow: 0 0 35px #ffee10;
+    transform: scale(1.1); 
+    background: #ffee10;
+    transition: .5s;
+    transform: scale(.9);
+   
 }
 #header {
-    height: 40%;
+    height: 100px;
     background-color: #000;
 }
+
 
 #nav {
     display: inline-block;
