@@ -6,16 +6,7 @@
 .product-detail .image-large {
 
 }
-#logo{
-    float: left;
-    height: 40%;
-    padding-top: 5px;
-    padding-left: 15%;
-}
-#header {
-    height: 40%;
-    background-color: #000;
-}
+
 .instruct-link {
     font-size: 13px;
     display: flex;

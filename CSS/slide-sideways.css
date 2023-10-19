@@ -2,12 +2,13 @@
 #slide-sideways-00{
     padding-top: 50px;
     padding-bottom: 10px;
-    padding-left: 15.5%;
-    padding-right: 15%;
+    width: 1175px;
+    margin: auto;
+
 }
 .slider-item{
-    width: 45vh;
-    height: 100vh;
+    max-width: 50vh;
+    height: 70vh;
 }
 .slider-item-one{
     background-image: url(../IMGAGE/slide-sideways1.jpg);

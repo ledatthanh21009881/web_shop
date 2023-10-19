@@ -1,21 +1,15 @@
+/*-----------------Sale--------------------------*/
 
-
-/*-------------------------------------------*/
-
-
-
-  button span {
+button span {
     margin: 10px;
-  }
-*{
+}
+
+* {
     padding: 0;
     margin: 0;
 }
 
-
-
-.dn{
-    
+.dn {
     top: 90px;
     font-size: 18px;
     color: white;
@@ -25,24 +19,26 @@
     display: inline-block;
     color: white;
     font-weight: 600;
-
 }
 
-body{
-    font-family: 'Open Sans', sans-serif;  
+body {
+    font-family: 'Open Sans', sans-serif;
     font-size: 14px;
     color: #111;
     line-height: 1.15;
 }
-#wrapper{
+
+#wrapper {
     max-width: 1170px;
     margin: 0 auto;
 }
-.headline{
+
+.headline {
     text-align: center;
     margin: 40px 0px;
 }
-.sa{
+
+.sa {
     top: 90px;
     font-size: 18px;
     color: #bebebe;
@@ -53,35 +49,39 @@ body{
     color: whitesmoke;
     font-weight: 600;
 }
-.content{
+
+.content {
     width: 100%;
     display: flex;
 }
-.content .imgage-item{
+
+.content .imgage-item {
     width: 50%;
 }
-#imgage-item-1{
+
+#imgage-item-1 {
     padding-top: 10px;
-    
 }
-ul.products, ul.products2{
+
+ul.products,
+ul.products2 {
     width: 50%;
     list-style: none;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
-ul.products li{
+
+ul.products li {
     display: block;
     width: 33.333%;
-    /* flex-basis: 25%; */
     padding-left: 15px;
     padding-right: 15px;
     box-sizing: border-box;
     margin-bottom: 30px;
 }
-ul.products2 li{
 
+ul.products2 li {
     flex-basis: 25%;
     padding-left: 15px;
     padding-right: 15px;
@@ -89,289 +89,238 @@ ul.products2 li{
     margin-bottom: 30px;
 }
 
-ul.products li img, ul.products2 li img{
+ul.products li img,
+ul.products2 li img {
     max-width: 100%;
     height: auto;
 }
-ul.products li .product-top, ul.products2 li .product-top{
+
+ul.products li .product-top,
+ul.products2 li .product-top {
     position: relative;
     overflow: hidden;
 }
-ul.products li .product-top .product-thumb, ul.products2 li .product-top .product-thumb{
+
+ul.products li .product-top .product-thumb,
+ul.products2 li .product-top .product-thumb {
     display: block;
 }
-ul.products li:hover .product-top .product-thumb img, ul.products2 li:hover .product-top .product-thumb img{
+
+ul.products li:hover .product-top .product-thumb img,
+ul.products2 li:hover .product-top .product-thumb img {
     filter: opacity(80%);
 }
-ul.products li .product-top .product-thumb img, ul.products2 li .product-top .product-thumb img{
+
+ul.products li .product-top .product-thumb img,
+ul.products2 li .product-top .product-thumb img {
     display: block;
 }
-ul.products li .product-top a.buy-now, ul.products2 li .product-top a.buy-now{
+
+ul.products li .product-top a.buy-now,
+ul.products2 li .product-top a.buy-now {
     text-transform: uppercase;
     text-decoration: none;
     text-align: center;
     display: block;
     background-color: #b8d8e0;
     color: #fff;
-    padding: 10px 0px;
+    padding: 6px 0px;
     position: absolute;
     bottom: -36px;
     width: 100%;
     transition: 0.25s ease-in-out;
     opacity: 0.85;
 }
-ul.products li:hover a.buy-now,ul.products2 li:hover a.buy-now{
+
+ul.products li:hover a.buy-now,
+ul.products2 li:hover a.buy-now {
     bottom: 0px;
 }
-ul.products li .product-info, ul.products2 li .product-info{
-    
+
+ul.products li .product-info,
+ul.products2 li .product-info {
     padding: 10px 0px;
 }
-ul.products li .product-info a, ul.products2 li .product-info a{
+
+ul.products li .product-info a,
+ul.products2 li .product-info a {
     display: inline-block;
     text-decoration: none;
     color: #000;
 }
-ul.products li .product-info .product-name, ul.products2 li .product-info .product-name {
+
+ul.products li .product-info .product-name,
+ul.products2 li .product-info .product-name {
     color: #334862;
     padding: 3px 0px;
     text-decoration: line-through;
 }
-ul.products li .product-info .product-name2, ul.products2 li .product-info .product-name2 {
+
+ul.products li .product-info .product-name2,
+ul.products2 li .product-info .product-name2 {
     color: #334862;
     padding: 3px 0px;
-    
-    
 }
-.slider2{
+
+.slider2 {
     padding-left: 20%;
 }
 
-    
 .sale2 {
-   
     text-decoration: none;
-    
-}
-
-/*---- Phát ----------------------*/
-.refresh { 
-    display: flex;  
-    justify-content: space-evenly;
-    align-items: center;
-}
-
-.refresh-left .refresh-link {
-    width: 53%;
-}
-
-.refresh-right {
-    width: 38%;
-}
- 
-.refresh-left .refresh-link { 
-    cursor: pointer;
-}
-
-.refresh-left .refresh-link img {
-    display: block;
-    margin: auto;
-    width: 100%;
-    height: 686px;
-    /* height: 100%; */
-    /* display: flex; */
-    /* justify-content: end; */
-}
-
-/* refresh-right */
-.refresh-title1 {
-    text-transform: capitalize;
-    font-size: 2.4rem;
-    font-weight: 500;
-    color: black;
-}
-
-.refresh-sub {
-    font-size: 23px;
-    color: black;
-}
-
-.refresh-img-box {
-    display: flex;
-    flex-wrap: wrap;
-
-}
-
-.refresh-item {
-    width: calc(99%/3);
-}
-
-.refresh-item a img {
-    width: 100%; 
-    height: 274px;
-}
-
-.refresh-price {
-    font-size: 16px;
-    font-weight: bolder;
-    color: black;
-}
-
-.btn-refresh-box {
-    text-align: right;
-}
-.btn-add-refresh {
-    text-transform: uppercase;
-    color: white;
-    background-color: #343a40;
-    text-decoration: none;
-    padding: 6px 10px;
-    display: inline-block;
-    text-align: right;
 }
 
 
-/*----------------  Thoại  --------------------------*/
+/*----------------  Sản phẩm  --------------------------*/
 
-#T_SHIRT_wrapper{
-    max-width: 1170px;
+#T_SHIRT_wrapper {
+    max-width: 1175px;
     margin: 0 auto;
 }
-ul.T_SHIRT_products{
+
+ul.T_SHIRT_products {
     list-style: none;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    margin: 0;
+    padding: 0;
+
 }
-ul.T_SHIRT_products li{
+
+ul.T_SHIRT_products li {
     flex-basis: 25%;
     padding-left: 15px;
     padding-right: 15px;
     box-sizing: border-box;
     margin-bottom: 30px;
+    margin: 0;
+    padding: 0;
 }
-ul.T_SHIRT_products li img{
+
+ul.T_SHIRT_products li img {
     max-width: 100%;
     height: auto;
+    
 }
-ul.T_SHIRT_products li .product-top{
+
+ul.T_SHIRT_products li .product-top {
     position: relative;
     overflow: hidden;
 }
-ul.T_SHIRT_products li .product-top .product-thumb{
+
+ul.T_SHIRT_products li .product-top .product-thumb {
     display: block;
 }
-ul.T_SHIRT_products li:hover .product-top .product-thumb img{
+
+ul.T_SHIRT_products li:hover .product-top .product-thumb img {
     filter: opacity(80%);
 }
-ul.T_SHIRT_products li .product-top .product-thumb img{
+
+ul.T_SHIRT_products li .product-top .product-thumb img {
     display: block;
 }
-ul.T_SHIRT_products li .product-top a.buy-now{
+
+ul.T_SHIRT_products li .product-top a.buy-now {
     text-transform: uppercase;
     text-decoration: none;
     text-align: center;
     display: block;
     background-color: #b8d8e0;
     color: #fff;
-    padding: 10px 0px;
+    padding: 6px 0px;
     position: absolute;
     bottom: -36px;
     width: 100%;
     transition: 0.25s ease-in-out;
     opacity: 0.85;
 }
-ul.T_SHIRT_products li:hover a.buy-now{
+
+ul.T_SHIRT_products li:hover a.buy-now {
     bottom: 0px;
 }
-ul.T_SHIRT_products li .product-info{
-    
+
+ul.T_SHIRT_products li .product-info {
     padding: 10px 0px;
 }
-ul.T_SHIRT_products li .product-info a{
+
+ul.T_SHIRT_products li .product-info a {
     display: inline-block;
     text-decoration: none;
     color: #000;
 }
-ul.T_SHIRT_products li .product-info .product-name{
+
+ul.T_SHIRT_products li .product-info .product-name {
     color: #334862;
     padding: 3px 0px;
     text-decoration: line-through;
 }
-/**-------------------------------------------------------/
-/*    Nhung   */
-#SHIRT_wrapper{
-    max-width: 1170px;
-    margin: 0 auto;
-}
-ul.SHIRT_products{
-    list-style: none;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-ul.SHIRT_products li{
-    flex-basis: 25%;
-    padding-left: 15px;
-    padding-right: 15px;
-    box-sizing: border-box;
-    margin-bottom: 30px;
-}
-ul.SHIRT_products li img{
-    max-width: 100%;
-    height: auto;
-}
-ul.T_SHIRT_products li .product-top{
-    position: relative;
-    overflow: hidden;
-}
-ul.SHIRT_products li .product-top .product-thumb{
-    display: block;
-}
-ul.SHIRT_products li:hover .product-top .product-thumb img{
-    filter: opacity(80%);
-}
-ul.SHIRT_products li .product-top .product-thumb img{
-    display: block;
-}
-ul.SHIRT_products li .product-top a.buy-now{
-    text-transform: uppercase;
-    text-decoration: none;
-    text-align: center;
-    display: block;
-    background-color: #446084;
-    color: #fff;
-    padding: 10px 0px;
-    position: absolute;
-    bottom: -36px;
-    width: 100%;
-    transition: 0.25s ease-in-out;
-    opacity: 0.85;
-}
-ul.SHIRT_products li:hover a.buy-now{
-    bottom: 0px;
-}
-ul.SHIRT_products li .product-info{
-    
-    padding: 10px 0px;
-}
-ul.SHIRT_products li .product-info a{
-    display: block;
-    text-decoration: none;
-    display: inline-block;
-    
-}
-ul.SHIRT_products li .product-info .product-name{
-    color: #334862;
-    padding: 3px 0px;
-}
-#icon-user{
-    margin-left: 200px;
-
-}
-#search12{
-    margin-left: 200px;
-}
-
 /*---------------------------------------------------------*/
 
+
+        /*----------------*/
+
+        .btn2 {
+            position: relative;
+            display: inline-block;
+            padding: 15px 30px;
+            border: 2px solid #212121;
+            text-transform: uppercase;
+            color: #fefefe;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 20px;
+            transition: 0.3s;
+        }
+
+        .btn2::before {
+            content: '';
+            position: absolute;
+            top: -2px;
+            left: -2px;
+            width: calc(100% + 4px);
+            height: calc(100% - -2px);
+            background-color: #212121;
+            transition: 0.3s ease-out;
+            transform: scaleY(1);
+        }
+
+        .btn2::after {
+            content: '';
+            position: absolute;
+            top: -2px;
+            left: -2px;
+            width: calc(100% + 4px);
+            height: calc(100% - 50px);
+            background-color: #212121;
+            transition: 0.3s ease-out;
+            transform: scaleY(1);
+        }
+
+        .btn2:hover::before {
+            transform: translateY(-25px);
+            height: 0;
+        }
+
+        .btn2:hover::after {
+            transform: scaleX(0);
+            transition-delay: 0.15s;
+        }
+
+        .btn2:hover {
+            border: 2px solid #212121;
+            font-weight: 600;
+            color: #212121;
+        }
+
+        .btn2 span {
+            position: relative;
+            z-index: 3;
+        }
+
+        button {
+            text-decoration: none;
+            border: none;
+            background-color: transparent;
+        }
+ 

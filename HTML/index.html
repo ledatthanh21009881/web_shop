@@ -22,161 +22,11 @@
     <link rel="stylesheet" href="../CSS/slide-sideways.css">
     <link rel="stylesheet" href="../OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="../OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css">
-    <style>
-        .container {
-            position: relative;
-            box-sizing: border-box;
-            width: fit-content;
-        }
-
-        .mainbox {
-            box-sizing: border-box;
-            position: relative;
-            width: 230px;
-            height: 40px;
-            display: flex;
-            flex-direction: row-reverse;
-            align-items: center;
-            justify-content: center;
-            border-radius: 160px;
-            background-color: rgb(255,255,255);
-            transition: all 0.3s ease;
-        }
-
-        .checkbox:focus {
-            border: none;
-            outline: none;
-        }
-
-        .checkbox:checked {
-            right: 10px;
-        }
-
-        .checkbox:checked~.mainbox {
-            width: 50px;
-        }
-
-        .checkbox:checked~.mainbox .search_input {
-            width: 0;
-            height: 0px;
-        }
-
-        .checkbox:checked~.mainbox .iconContainer {
-            padding-right: 8px;
-        }
-
-        .checkbox {
-            box-sizing: border-box;
-            width: 30px;
-            height: 30px;
-            position: absolute;
-            right: 17px;
-            top: 10px;
-            z-index: 9;
-            cursor: pointer;
-            appearance: none;
-        }
-
-        .search_input {
-            box-sizing: border-box;
-            height: 100%;
-            width: 170px;
-            background-color: transparent;
-            border: none;
-            outline: none;
-            padding-bottom: 4px;
-            padding-left: 10px;
-            font-size: 1em;
-            color: black;
-            transition: all 0.3s ease;
-            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-        }
-
-        .search_input::placeholder {
-            color: rgba(255, 255, 255, 0.776);
-        }
-
-        .iconContainer {
-            box-sizing: border-box;
-            padding-top: 5px;
-            width: fit-content;
-            transition: all 0.3s ease;
-        }
-
-        .search_icon {
-            box-sizing: border-box;
-            fill: black;
-            font-size: 1.3em;
-        }
-
-        /*----------------*/
-        .btn2 {
-            position: relative;
-            display: inline-block;
-            padding: 15px 30px;
-            border: 2px solid #212121;
-            text-transform: uppercase;
-            color: #fefefe;
-            text-decoration: none;
-            font-weight: 600;
-            font-size: 20px;
-            transition: 0.3s;
-        }
-
-        .btn2::before {
-            content: '';
-            position: absolute;
-            top: -2px;
-            left: -2px;
-            width: calc(100% + 4px);
-            height: calc(100% - -2px);
-            background-color: #212121;
-            transition: 0.3s ease-out;
-            transform: scaleY(1);
-        }
-
-        .btn2::after {
-            content: '';
-            position: absolute;
-            top: -2px;
-            left: -2px;
-            width: calc(100% + 4px);
-            height: calc(100% - 50px);
-            background-color: #212121;
-            transition: 0.3s ease-out;
-            transform: scaleY(1);
-        }
-
-        .btn2:hover::before {
-            transform: translateY(-25px);
-            height: 0;
-
-        }
-
-        .btn2:hover::after {
-            transform: scaleX(0);
-            transition-delay: 0.15s;
-
-        }
-
-        .btn2:hover {
-            border: 2px solid #212121;
-            font-weight: 600;
-            color: #212121;
-        }
-
-        .btn2 span {
-            position: relative;
-            z-index: 3;
-        }
-
-        button {
-            text-decoration: none;
-            border: none;
-            background-color: transparent;
-        }
-    </style>
-
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
 
 </head>
 
@@ -184,237 +34,430 @@
 
     <!-- Thành jjhhjghjg -->
     <div id="main">
-        <div id="header" style="padding-top: 10px;">
+        <div id="header" class="class2k3">
             <div id="logo">
                 <a href="../HTML/index.html">
                     <img src="../IMGAGE/logo1.png" alt="" width="90px">
                 </a>
             </div>
-            <ul id="nav">
-                <li>
-                    <a href="">BỘ SƯU TẬP</a>
-                    <ul class="subnav1">
-                        <li><a href="">The Style of No Style</a></li>
-                        <li><a href="">Di Sản</a></li>
-                        <li><a href="">Cosmo - Thời trang toàn cầu</a></li>
-                        <li><a href="">Japanese Horror Stories</a></li>
-                        <li><a href="">The Day'a Eye</a></li>
-                        <li><a href="">Y2010 Originals</a></li>
-                        <li><a href="">Nghệ thuật Tối Giản</a></li>
-                        <li><a href="">Đơn giản mà sang</a></li>
-                        <li><a href="">Space</a></li>
-                        <li><a href="">Linh vật Bbuff</a></li>
-                        <li><a href="">Thần Anubis</a></li>
-                    </ul>
-                </li>
-                <li><a href="">SALE MÙA TỰU TRƯỜNG</a></li>
-                <li><a href="">SALE DỌN KHO BALO TÚI</a></li>
-                <li><a href="">MỚI MỞ BÁN</a></li>
-                <li>
-                    <div class="container">
-                        <input checked="" class="checkbox" type="checkbox">
-                        <div class="mainbox">
-                            <div class="iconContainer">
-                                <svg viewBox="0 0 512 512" height="1em" xmlns="http://www.w3.org/2000/svg"
-                                    class="search_icon">
-                                    <path
-                                        d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z">
-                                    </path>
+            <nav style="display: flex; justify-content: space-between;">
+                <ul id="nav">
+                    <li>
+                        <a href="">BỘ SƯU TẬP</a>
+                        <ul class="subnav1">
+                            <li><a href="">The Style of No Style</a></li>
+                            <li><a href="">Di Sản</a></li>
+                            <li><a href="">Cosmo - Thời trang toàn cầu</a></li>
+                            <li><a href="">Japanese Horror Stories</a></li>
+                            <li><a href="">The Day'a Eye</a></li>
+                            <li><a href="">Y2010 Originals</a></li>
+                            <li><a href="">Nghệ thuật Tối Giản</a></li>
+                            <li><a href="">Đơn giản mà sang</a></li>
+                            <li><a href="">Space</a></li>
+                            <li><a href="">Linh vật Bbuff</a></li>
+                            <li><a href="">Thần Anubis</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="">SALE MÙA TỰU TRƯỜNG</a></li>
+                    <li><a href="">SALE DỌN KHO BALO TÚI</a></li>
+                    <li><a href="">MỚI MỞ BÁN</a></li>
+                    <li>
+                        <div class="container">
+                            <input checked="" class="checkbox" type="checkbox">
+                            <div class="mainbox">
+                                <div class="iconContainer">
+                                    <svg viewBox="0 0 512 512" height="1em" xmlns="http://www.w3.org/2000/svg"
+                                        class="search_icon">
+                                        <path
+                                            d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z">
+                                        </path>
+                                    </svg>
+                                </div>
+                                <input class="search_input" placeholder="search" type="text">
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div id="icon-user">
+                            <a href="../HTML/login.html" id="icon-user1">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor"
+                                    class="bi bi-person-circle" viewBox="0 0 16 16" style="color: #ccc;">
+                                    <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
+                                    <path fill-rule="evenodd"
+                                        d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z" />
                                 </svg>
-                            </div>
-                            <input class="search_input" placeholder="search" type="text">
+                            </a>
                         </div>
-                    </div>
+                    </li>
+                    <li>
+                        <div id="icon-cart">
 
-
-                <li>
-                    <div id="icon-user">
-                        <a href="../HTML/login.html" id="icon-user1">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor"
-                                class="bi bi-person-circle" viewBox="0 0 16 16" style="color: #ccc;">
-                                <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
-                                <path fill-rule="evenodd"
-                                    d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z" />
-                            </svg>
-                        </a>
-                    </div>
-                </li>
-                <li>
-                    <div id="icon-cart">
-
-                        <a href="">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor"
-                                class="bi bi-cart4" viewBox="0 0 16 16" style="color: #ccc;">
-                                <path
-                                    d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l.5 2H5V5H3.14zM6 5v2h2V5H6zm3 0v2h2V5H9zm3 0v2h1.36l.5-2H12zm1.11 3H12v2h.61l.5-2zM11 8H9v2h2V8zM8 8H6v2h2V8zM5 8H3.89l.5 2H5V8zm0 5a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z" />
-                            </svg>
-                        </a>
-                    </div>
-                </li>
-
-            </ul>
-            <!--End: Nav-->
-
-            <!--Begin: Search button-->
-            <!-- <div class="search-btn">
-                <i class="search-icon ti-search"></i>
-
-            </div> -->
-            <!--End: search button-->
+                            <a href="../HTML/cart.html">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor"
+                                    class="bi bi-cart4" viewBox="0 0 16 16" style="color: #ccc;">
+                                    <path
+                                        d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l.5 2H5V5H3.14zM6 5v2h2V5H6zm3 0v2h2V5H9zm3 0v2h1.36l.5-2H12zm1.11 3H12v2h.61l.5-2zM11 8H9v2h2V8zM8 8H6v2h2V8zM5 8H3.89l.5 2H5V8zm0 5a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z" />
+                                </svg>
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
         </div>
-        <!---
-            
-            <div id="search-box">
-                <input type="text" class="search-txt" placeholder="Bạn muốn tìm gì">
-                <a href="" class="search-btn" >
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                </a>   
-            
-            </div>
-        -->
+        <!--Container----------------------------------------------------------------------------------->
+        <div class="p">
+            <div>
+                <div class="text-nd text-center mt-3">
+                    <h1 class="fs-3">MỞ BÁN</h1>
+                    <h3 class="fs-6">BST Khởi Nguyên và Thịnh Vượng SALE 20%</h3>
+                </div>
+                <div id="slider">
+                    <div id="wrapper">
+                        <div class="headline"></div>
+                        <div class="content">
+                            <div class="imgage-item">
 
-        <div>
-            <div class="text-nd text-center mt-3">
-                <h1 class="fs-3">MỞ BÁN</h1>
-                <h3 class="fs-6">BST Khởi Nguyên và Thịnh Vượng SALE 20%</h3>
-            </div>
-            <div id="slider">
-                <div id="wrapper">
-                    <div class="headline"></div>
-                    <div class="content">
-                        <div class="imgage-item">
-
-                            <img style="width: 100%;" src="../IMGAGE/sale_1.jpg" alt="">
-                        </div>
-
-
-                        <ul class="products">
-                            <li>
-                                <div class="product-item">
-                                    <div class="product-top">
-                                        <a href="../HTML/sale-product-1.html" class="product-thumb">
-                                            <img src="../IMGAGE/sale_balo.jpg" width="300px" height="50%">
-                                        </a>
-                                        <a href="../HTML/sale-product-1.html" class="buy-now">Xem ngay</a>
-                                    </div>
-                                    <div class="product-info">
-                                        <a href="../HTML/sale-product-1.html" class="product-name">497</a>
-                                        <a href="../HTML/sale-product-1.htmll" class="product-name2">398 Giá tốt</a>
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="product-item">
-                                    <div class="product-top">
-                                        <a href="../HTML/sale-product-1.html" class="product-thumb">
-                                            <img src="../IMGAGE/sale_balo_2.jpg" alt="" width="300px" height="50%">
-                                        </a>
-                                        <a href="../HTML/sale-product-1.html" class="buy-now">Xem ngay</a>
-                                    </div>
-                                    <div class="product-info">
-                                        <a href="../HTML/sale-product-1.html" class="product-name">457</a>
-                                        <a href="../HTML/sale-product-1.htmll" class="product-name2">366 Giá tốt</a>
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="product-item">
-                                    <div class="product-top">
-                                        <a href="../HTML/sale-product-1.html" class="product-thumb">
-                                            <img src="../IMGAGE/sale_tui_1.jpg" alt="" width="300px" height="50%">
-                                        </a>
-                                        <a href="../HTML/sale-product-1.html" class="buy-now">Xem ngay</a>
-                                    </div>
-                                    <div class="product-info">
-                                        <a href="../HTML/sale-product-1.html" class="product-name">277</a>
-                                        <a href="../HTML/sale-product-1.html" class="product-name2">222 Giá tốt</a>
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="product-item">
-                                    <div class="product-top">
-                                        <a href="../HTML/sale-product-1.html" class="product-thumb">
-                                            <img src="../IMGAGE/sale_tui_2.jpg" alt="" width="300px" height="50%">
-                                        </a>
-                                        <a href="../HTML/sale-product-1.html" class="buy-now">Xem ngay</a>
-                                    </div>
-                                    <div class="product-info">
-                                        <a href="../HTML/sale-product-1.html" class="product-name">257</a>
-                                        <a href="../HTML/sale-product-1.html" class="product-name2">206 Giá tốt</a>
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="product-item">
-                                    <div class="product-top">
-                                        <a href="../HTML/sale-product-1.html" class="product-thumb">
-                                            <img src="../IMGAGE/sale_vi_1.jpg" alt="" width="300px" height="50%">
-                                        </a>
-                                        <a href="../HTML/sale-product-1.html" class="buy-now">Xem ngay</a>
-                                    </div>
-                                    <div class="product-info">
-                                        <a href="../HTML/sale-product-1.html" class="product-name">237</a>
-                                        <a href="../HTML/sale-product-1.html" class="product-name2">190 Giá tốt</a>
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="product-item">
-                                    <div class="product-top">
-                                        <a href="./sale-container.html" class="product-thumb">
-                                            <img src="../IMGAGE/sale_vi_2.jpg" alt="" width="300px" height="50%">
-                                        </a>
-                                        <a href="./sale-container.html" class="buy-now">Xem ngay</a>
-                                    </div>
-                                    <div class="product-info">
-                                        <a href="./sale-container.html" class="product-name"
-                                            style="display: inline-block; ">297</a>
-                                        <a href="./sale-container.html" class="product-name2">238 Giá tốt</a>
-                                    </div>
-                                </div>
-                            </li>
-                            <div class="sale1" style="padding-left: 150px;">
-                                <button>
-                                    <a href="../HTML/shopdonam2.html" class="btn2"><span class="spn2">Xem
-                                            thêm</span></a>
-                                </button>
+                                <img class="img-fluid" style="margin:auto; width:100%;" src="../IMGAGE/sale_1.jpg"
+                                    alt="">
                             </div>
 
+
+                            <ul class="products">
+                                <li>
+                                    <div class="product-item">
+                                        <div class="product-top">
+                                            <a href="#" class="product-thumb">
+                                                <img src="../IMGAGE/sale_balo.jpg" width="300px" height="50%">
+                                            </a>
+                                            <a href="#" class="buy-now">Xem ngay</a>
+                                        </div>
+                                        <div class="product-info">
+                                            <a href="#" class="product-name">497</a>
+                                            <a href="#l" class="product-name2">398 Giá tốt</a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="product-item">
+                                        <div class="product-top">
+                                            <a href="#" class="product-thumb">
+                                                <img src="../IMGAGE/sale_balo_2.jpg" alt="" width="300px" height="50%">
+                                            </a>
+                                            <a href="#" class="buy-now">Xem ngay</a>
+                                        </div>
+                                        <div class="product-info">
+                                            <a href="#" class="product-name">457</a>
+                                            <a href="#l" class="product-name2">366 Giá tốt</a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="product-item">
+                                        <div class="product-top">
+                                            <a href="#" class="product-thumb">
+                                                <img src="../IMGAGE/sale_tui_1.jpg" alt="" width="300px" height="50%">
+                                            </a>
+                                            <a href="#" class="buy-now">Xem ngay</a>
+                                        </div>
+                                        <div class="product-info">
+                                            <a href="#" class="product-name">277</a>
+                                            <a href="#" class="product-name2">222 Giá tốt</a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="product-item">
+                                        <div class="product-top">
+                                            <a href="#" class="product-thumb">
+                                                <img src="../IMGAGE/sale_tui_2.jpg" alt="" width="300px" height="50%">
+                                            </a>
+                                            <a href="#" class="buy-now">Xem ngay</a>
+                                        </div>
+                                        <div class="product-info">
+                                            <a href="#" class="product-name">257</a>
+                                            <a href="#" class="product-name2">206 Giá tốt</a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="product-item">
+                                        <div class="product-top">
+                                            <a href="#" class="product-thumb">
+                                                <img src="../IMGAGE/sale_vi_1.jpg" alt="" width="300px" height="50%">
+                                            </a>
+                                            <a href="#" class="buy-now">Xem ngay</a>
+                                        </div>
+                                        <div class="product-info">
+                                            <a href="#" class="product-name">237</a>
+                                            <a href="#" class="product-name2">190 Giá tốt</a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="product-item">
+                                        <div class="product-top">
+                                            <a href="#" class="product-thumb">
+                                                <img src="../IMGAGE/sale_vi_2.jpg" alt="" width="300px" height="50%">
+                                            </a>
+                                            <a href="#" class="buy-now">Xem ngay</a>
+                                        </div>
+                                        <div class="product-info">
+                                            <a href="#" class="product-name"
+                                                style="display: inline-block; ">297</a>
+                                            <a href="#" class="product-name2">238 Giá tốt</a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <div class="sale1" style="padding-left: 150px;">
+                                    <button>
+                                        <a href="../HTML/shopdonam2.html" class="btn2"><span class="spn2">Xem
+                                                thêm</span></a>
+                                    </button>
+                                </div>
+
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!---------------------------------------------------------------------------------------------------------------------->
+                <!-- Phát -->
+                <div class="text-center text-nd mt-3">
+                    <h1 class="fs-3">Refresh Travel</h1>
+                    <h3 class="fs-6">Tự do, phiêu diêu. Cùng nhau đi "Du lịch chữa lành tâm hồn" nào~</h3>
+                </div>
+                <div id="slider">
+                    <div id="wrapper">
+                        <div class="headline"></div>
+                        <div class="content">
+                            <div class="imgage-item">
+
+                                <img style="width: 100%;" src="../IMGAGE/Refresh_Travel_img_left.jpg" alt="">
+                            </div>
+
+
+                            <ul class="products">
+
+                                <li>
+                                    <div class="product-item">
+                                        <div class="product-top">
+                                            <a href="#" class="product-thumb">
+                                                <img src="../IMGAGE/Refresh_Travel_h1.jpg" width="300px" height="50%">
+                                            </a>
+                                            <a href="#" class="buy-now">Xem ngay</a>
+                                        </div>
+                                        <div class="product-info">
+                                            <a href="#" class="product-name7">327</a>
+
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="product-item">
+                                        <div class="product-top">
+                                            <a href="#" class="product-thumb">
+                                                <img src="../IMGAGE/Refresh_Travel_h2.jpg" alt="" width="300px"
+                                                    height="50%">
+                                            </a>
+                                            <a href="#" class="buy-now">Xem ngay</a>
+                                        </div>
+                                        <div class="product-info">
+                                            <a href="#" class="product-name7">397</a>
+
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="product-item">
+                                        <div class="product-top">
+                                            <a href="#" class="product-thumb">
+                                                <img src="../IMGAGE/Refresh_Travel_h3.jpg" alt="" width="300px"
+                                                    height="50%">
+                                            </a>
+                                            <a href="#" class="buy-now">Xem ngay</a>
+                                        </div>
+                                        <div class="product-info">
+                                            <a href="#" class="product-name7">325</a>
+
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="product-item">
+                                        <div class="product-top">
+                                            <a href="#" class="product-thumb">
+                                                <img src="../IMGAGE/Refresh_Travel_h4.jpg" alt="" width="300px"
+                                                    height="50%">
+                                            </a>
+                                            <a href="#" class="buy-now">Xem ngay</a>
+                                        </div>
+                                        <div class="product-info">
+                                            <a href="#" class="product-name7">497</a>
+
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="product-item">
+                                        <div class="product-top">
+                                            <a href="#" class="product-thumb">
+                                                <img src="../IMGAGE/Refresh_Travel_h5.jpg" alt="" width="300px"
+                                                    height="50%">
+                                            </a>
+                                            <a href="#" class="buy-now">Xem ngay</a>
+                                        </div>
+                                        <div class="product-info">
+                                            <a href="#" class="product-name7">297</a>
+
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="product-item">
+                                        <div class="product-top">
+                                            <a href="#" class="product-thumb">
+                                                <img src="../IMGAGE/Refresh_Travel_h6.jpg" alt="" width="300px"
+                                                    height="50%">
+                                            </a>
+                                            <a href="#" class="buy-now">Xem ngay</a>
+                                        </div>
+                                        <div class="product-info">
+                                            <a href="#" class="product-name7"
+                                                style="display: inline-block; ">387</a>
+
+                                        </div>
+                                    </div>
+                                </li>
+                                <div class="sale1" style="padding-left: 150px;">
+                                    <button>
+                                        <a style="text-decoration: none;" href="#" class="btn2"><span class="spn2">Xem
+                                                thêm</span></a>
+                                    </button>
+                                </div>
+
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+                <!------------------------------>
+                <div id="slide-sideways-00">
+                    <h4 class="text-center">@HANGOUT.COFFEE @STAYATHOME</h4>
+                    <section class="slider owl-carousel owl-theme">
+
+                        <div class="slider-item slider-item-one">
+
+                        </div>
+
+                        <div class="slider-item slider-item-two">
+
+                        </div>
+                        <div class="slider-item slider-item-three">
+
+                        </div>
+                        <div class="slider-item slider-item-four">
+
+                        </div>
+                        <div class="slider-item slider-item-five">
+
+                        </div>
+
+                    </section>
+                </div>
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+                <script src="../OwlCarousel2-2.3.4/dist/owl.carousel.min.js "></script>
+
+
+                <!-------------------------------------------------------------------------------------------------------------------->
+                <!-- Thoại -->>
+                <div class="T_SHIRT">
+                    <div id="T_SHIRT_wrapper">
+                        <div>
+                            <h1 class="text-center fs-3">BEST T-SHIRT</h1>
+                        </div>
+                        <ul class="T_SHIRT_products">
+                            <li>
+                                <div class="product-item">
+                                    <div class="product-top">
+                                        <a href="#" class="product-thumb">
+                                            <img src="../IMGAGE/T_Shirt_h1.jpg" alt="" width="300px" height="50%">
+                                        </a>
+                                        <a href="#" class="buy-now">Xem ngay</a>
+                                    </div>
+                                    <div class="product-info">
+                                        <a href="#" class="product-name7"
+                                            style="display: inline-block; ">227</a>
+
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="product-item">
+                                    <div class="product-top">
+                                        <a href="#" class="product-thumb">
+                                            <img src="../IMGAGE/T_Shirt_h2.jpg" alt="" width="300px" height="50%">
+                                        </a>
+                                        <a href="#" class="buy-now">Xem ngay</a>
+                                    </div>
+                                    <div class="product-info">
+                                        <a href="#" class="product-name"
+                                            style="display: inline-block; ">287</a>
+                                        <a href="#" class="product-name2">230 Giá tốt</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="product-item">
+                                    <div class="product-top">
+                                        <a href="#" class="product-thumb">
+                                            <img src="../IMGAGE/T_Shirt_h3.jpg" alt="" width="300px" height="50%">
+                                        </a>
+                                        <a href="#" class="buy-now">Xem ngay</a>
+                                    </div>
+                                    <div class="product-info">
+                                        <a href="#" class="product-name"
+                                            style="display: inline-block; ">287</a>
+                                        <a href="#" class="product-name2">230 Giá tốt</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="product-item">
+                                    <div class="product-top">
+                                        <a href="#" class="product-thumb">
+                                            <img src="../IMGAGE/T_Shirt_h4.jpg" alt="" width="300px" height="50%">
+                                        </a>
+                                        <a href="#" class="buy-now">Xem ngay</a>
+                                    </div>
+                                    <div class="product-info">
+                                        <a href="#" class="product-name"
+                                            style="display: inline-block; ">287</a>
+                                        <a href="#" class="product-name2">230 Giá tốt</a>
+                                    </div>
+                                </div>
+                            </li>
                         </ul>
                     </div>
                 </div>
-
-            </div>
-
-            <!---------------------------------------------------------------------------------------------------------------------->
-            <!-- Phát -->
-            <div class="text-center text-nd mt-3">
-                <h1 class="fs-3">Refresh Travel</h1>
-                <h3 class="fs-6">Tự do, phiêu diêu. Cùng nhau đi "Du lịch chữa lành tâm hồn" nào~</h3>
-            </div>
-            <div id="slider">
-                <div id="wrapper">
-                    <div class="headline"></div>
-                    <div class="content">
-                        <div class="imgage-item">
-
-                            <img style="width: 100%;" src="../IMGAGE/Refresh_Travel_img_left.jpg" alt="">
+                <!------------Nhung------------------------------------------------------------------->
+                <div class="T_SHIRT">
+                    <div id="T_SHIRT_wrapper">
+                        <div>
+                            <h1 class="text-center fs-3">BEST SHIRT</h1>
                         </div>
-
-
-                        <ul class="products">
-
+                        <ul class="T_SHIRT_products">
                             <li>
                                 <div class="product-item">
                                     <div class="product-top">
-                                        <a href="./product-detail.html" class="product-thumb">
-                                            <img src="../IMGAGE/Refresh_Travel_h1.jpg" width="300px" height="50%">
+                                        <a href="#" class="product-thumb">
+                                            <img src="../IMGAGE/Shirt_h1.jpg" alt="" width="300px" height="50%">
                                         </a>
-                                        <a href="./product-detail.html" class="buy-now">Xem ngay</a>
+                                        <a href="#" class="buy-now">Xem ngay</a>
                                     </div>
                                     <div class="product-info">
-                                        <a href="./product-detail.html" class="product-name7">327</a>
+                                        <a href="#" class="product-name7"
+                                            style="display: inline-block; ">255</a>
 
                                     </div>
                                 </div>
@@ -422,14 +465,29 @@
                             <li>
                                 <div class="product-item">
                                     <div class="product-top">
-                                        <a href="./product-detail.html" class="product-thumb">
-                                            <img src="../IMGAGE/Refresh_Travel_h2.jpg" alt="" width="300px"
-                                                height="50%">
+                                        <a href="#" class="product-thumb">
+                                            <img src="../IMGAGE/Shirt_h2.jpg" alt="" width="300px" height="50%">
                                         </a>
-                                        <a href="./product-detail.html" class="buy-now">Xem ngay</a>
+                                        <a href="#" class="buy-now">Xem ngay</a>
                                     </div>
                                     <div class="product-info">
-                                        <a href="./product-detail.html" class="product-name7">397</a>
+                                        <a href="#" class="product-name"
+                                            style="display: inline-block; ">267</a>
+                                        <a href="#" class="product-name2">180 </a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="product-item">
+                                    <div class="product-top">
+                                        <a href="#" class="product-thumb">
+                                            <img src="../IMGAGE/Shirt_h3.jpg" alt="" width="300px" height="50%">
+                                        </a>
+                                        <a href="#" class="buy-now">Xem ngay</a>
+                                    </div>
+                                    <div class="product-info">
+                                        <a href="#" class="product-name7"
+                                            style="display: inline-block; ">255</a>
 
                                     </div>
                                 </div>
@@ -437,495 +495,309 @@
                             <li>
                                 <div class="product-item">
                                     <div class="product-top">
-                                        <a href="./product-detail.html" class="product-thumb">
-                                            <img src="../IMGAGE/Refresh_Travel_h3.jpg" alt="" width="300px"
-                                                height="50%">
+                                        <a href="#" class="product-thumb">
+                                            <img src="../IMGAGE/Shirt_h4.jpg" alt="" width="300px" height="50%">
                                         </a>
-                                        <a href="./product-detail.html" class="buy-now">Xem ngay</a>
+                                        <a href="#" class="buy-now">Xem ngay</a>
                                     </div>
                                     <div class="product-info">
-                                        <a href="./product-detail.html" class="product-name7">325</a>
+                                        <a href="#" class="product-name7"
+                                            style="display: inline-block; ">357</a>
 
                                     </div>
                                 </div>
                             </li>
-                            <li>
-                                <div class="product-item">
-                                    <div class="product-top">
-                                        <a href="./product-detail.html" class="product-thumb">
-                                            <img src="../IMGAGE/Refresh_Travel_h4.jpg" alt="" width="300px"
-                                                height="50%">
-                                        </a>
-                                        <a href="./product-detail.html" class="buy-now">Xem ngay</a>
-                                    </div>
-                                    <div class="product-info">
-                                        <a href="./product-detail.html" class="product-name7">497</a>
-
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="product-item">
-                                    <div class="product-top">
-                                        <a href="./product-detail.html" class="product-thumb">
-                                            <img src="../IMGAGE/Refresh_Travel_h5.jpg" alt="" width="300px"
-                                                height="50%">
-                                        </a>
-                                        <a href="./product-detail.html" class="buy-now">Xem ngay</a>
-                                    </div>
-                                    <div class="product-info">
-                                        <a href="./product-detail.html" class="product-name7">297</a>
-
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="product-item">
-                                    <div class="product-top">
-                                        <a href="./product-detail.html" class="product-thumb">
-                                            <img src="../IMGAGE/Refresh_Travel_h6.jpg" alt="" width="300px"
-                                                height="50%">
-                                        </a>
-                                        <a href="./product-detail.html" class="buy-now">Xem ngay</a>
-                                    </div>
-                                    <div class="product-info">
-                                        <a href="./product-detail.html" class="product-name7"
-                                            style="display: inline-block; ">387</a>
-
-                                    </div>
-                                </div>
-                            </li>
-                            <div class="sale1" style="padding-left: 150px;">
-                                <button>
-                                    <a style="text-decoration: none;" href="#" class="btn2"><span class="spn2">Xem
-                                            thêm</span></a>
-                                </button>
-                            </div>
-
                         </ul>
                     </div>
                 </div>
+                <!-----  Phúc ---------------------------------------------->
+                <div class="T_SHIRT">
+                    <div id="T_SHIRT_wrapper">
+                        <div>
+                            <h1 class="text-center fs-3">BEST JACKET</h1>
+                        </div>
+                        <ul class="T_SHIRT_products">
+                            <li>
+                                <div class="product-item">
+                                    <div class="product-top">
+                                        <a href="../HTML/best-jacket-product-1.html" class="product-thumb">
+                                            <img src="../IMGAGE/BEST JACKET_1.jpg" alt="" width="300px" height="50%">
+                                        </a>
+                                        <a href="../HTML/best-jacket-product-1.html" class="buy-now">Xem ngay</a>
+                                    </div>
+                                    <div class="product-info">
+                                        <a href="../HTML/best-jacket-product-1.html" class="product-name"
+                                            style="display: inline-block; ">397</a>
+                                        <a href="../HTML/best-jacket-product-1.html" class="product-name2">318 Giá
+                                            tốt</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="product-item">
+                                    <div class="product-top">
+                                        <a href="#" class="product-thumb">
+                                            <img src="../IMGAGE/BEST JACKET_2.jpg" alt="" width="300px" height="50%">
+                                        </a>
+                                        <a href="#" class="buy-now">Xem ngay</a>
+                                    </div>
+                                    <div class="product-info">
+                                        <a href="#" class="product-name"
+                                            style="display: inline-block; ">397</a>
+                                        <a href="#" class="product-name2">278 Giá tốt</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="product-item">
+                                    <div class="product-top">
+                                        <a href="#" class="product-thumb">
+                                            <img src="../IMGAGE/BEST JACKET_3.jpg" alt="" width="300px" height="50%">
+                                        </a>
+                                        <a href="#" class="buy-now">Xem ngay</a>
+                                    </div>
+                                    <div class="product-info">
+                                        <a href="#" class="product-name"
+                                            style="display: inline-block; ">397</a>
+                                        <a href="#" class="product-name2">318 Giá tốt</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="product-item">
+                                    <div class="product-top">
+                                        <a href="#" class="product-thumb">
+                                            <img src="../IMGAGE/BEST JACKET_4.jpg" alt="" width="300px" height="50%">
+                                        </a>
+                                        <a href="#" class="buy-now">Xem ngay</a>
+                                    </div>
+                                    <div class="product-info">
+                                        <a href="#" class="product-name7"
+                                            style="display: inline-block; ">597</a>
 
-            </div>
-            <!------------------------------>
-            <div id="slide-sideways-00">
-                <section class="slider owl-carousel owl-theme">
-                    <div class="slider-item slider-item-one">
-
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
                     </div>
-
-                    <div class="slider-item slider-item-two">
-
-                    </div>
-                    <div class="slider-item slider-item-three">
-
-                    </div>
-                    <div class="slider-item slider-item-four">
-
-                    </div>
-                    <div class="slider-item slider-item-five">
-
-                    </div>
-                </section>
-            </div>
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-            <script src="../OwlCarousel2-2.3.4/dist/owl.carousel.min.js "></script>
-
-
-            <!-------------------------------------------------------------------------------------------------------------------->
-            <!-- Thoại -->>
-            <div class="T_SHIRT">
-                <div id="T_SHIRT_wrapper">
-                    <div>
-                        <h1 class="text-center fs-3">BEST T-SHIRT</h1>
-                    </div>
-                    <ul class="T_SHIRT_products">
-                        <li>
-                            <div class="product-item">
-                                <div class="product-top">
-                                    <a href="../HTML/best-t-shirt-product-1.html" class="product-thumb">
-                                        <img src="../IMGAGE/T_Shirt_h1.jpg" alt="" width="300px" height="50%">
-                                    </a>
-                                    <a href="../HTML/best-t-shirt-product-1.html" class="buy-now">Xem ngay</a>
-                                </div>
-                                <div class="product-info">
-                                    <a href="../HTML/best-t-shirt-product-1.html" class="product-name7"
-                                        style="display: inline-block; ">227</a>
-
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="product-item">
-                                <div class="product-top">
-                                    <a href="./product-detail.html" class="product-thumb">
-                                        <img src="../IMGAGE/T_Shirt_h2.jpg" alt="" width="300px" height="50%">
-                                    </a>
-                                    <a href="./product-detail.html" class="buy-now">Xem ngay</a>
-                                </div>
-                                <div class="product-info">
-                                    <a href="./product-detail.html" class="product-name"
-                                        style="display: inline-block; ">287</a>
-                                    <a href="./product-detail.html" class="product-name2">230 Giá tốt</a>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="product-item">
-                                <div class="product-top">
-                                    <a href="./product-detail.html" class="product-thumb">
-                                        <img src="../IMGAGE/T_Shirt_h3.jpg" alt="" width="300px" height="50%">
-                                    </a>
-                                    <a href="./product-detail.html" class="buy-now">Xem ngay</a>
-                                </div>
-                                <div class="product-info">
-                                    <a href="./product-detail.html" class="product-name"
-                                        style="display: inline-block; ">287</a>
-                                    <a href="./product-detail.html" class="product-name2">230 Giá tốt</a>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="product-item">
-                                <div class="product-top">
-                                    <a href="./product-detail.html" class="product-thumb">
-                                        <img src="../IMGAGE/T_Shirt_h4.jpg" alt="" width="300px" height="50%">
-                                    </a>
-                                    <a href="./product-detail.html" class="buy-now">Xem ngay</a>
-                                </div>
-                                <div class="product-info">
-                                    <a href="./product-detail.html" class="product-name"
-                                        style="display: inline-block; ">287</a>
-                                    <a href="./product-detail.html" class="product-name2">230 Giá tốt</a>
-                                </div>
-                            </div>
-                        </li>
-                    </ul>
                 </div>
-            </div>
-            <!------------Nhung------------------------------------------------------------------->
-            <div class="T_SHIRT">
-                <div id="T_SHIRT_wrapper">
-                    <div>
-                        <h1 class="text-center fs-3">BEST SHIRT</h1>
+                <!------------------------------------------------------------>
+
+                <div id="slide-sideways-00">
+                    <h4 class="text-center">@HOWTOWEAR</h4>
+                    <section class="slider owl-carousel owl-theme">
+                        <div class="slider-item slider-item-one1">
+
+                        </div>
+                        <div class="slider-item slider-item-two2">
+
+                        </div>
+                        <div class="slider-item slider-item-three3">
+
+                        </div>
+                        <div class="slider-item slider-item-four4">
+
+                        </div>
+                        <div class="slider-item slider-item-five5">
+
+                        </div>
+                    </section>
+
+                    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+                    <script src="../OwlCarousel2-2.3.4/dist/owl.carousel.min.js "></script>
+                    <script>
+                        $('.owl-carousel').owlCarousel({
+                            loop: true,  // Lặp lại khi đến cuối danh sách
+                            margin: 10, // Khoảng cách giữa các mục
+                            nav: true, //Hiển thị nút điều hướng
+                            autoplay: true,
+                            autoplayTimeout: 3000,
+                            dots: true,
+                            dotsEach: 3, // Hiển thị 3 nút dots sau mỗi lượt
+                            responsive: {
+                                0: {
+                                    items: 1 //Đây là tùy chọn cho màn hình có chiều rộng từ 0px đến 599px. Nếu chiều rộng của màn hình nằm trong khoảng này (màn hình nhỏ), thì chỉ có 1 mục (item) được hiển thị trên màn hình cùng lúc.
+                                },
+                                600: {
+                                    items: 3 //Đây là tùy chọn cho màn hình có chiều rộng từ 600px đến 999px. Nếu chiều rộng của màn hình nằm trong khoảng này (màn hình trung bình), thì sẽ có 3 mục (items) được hiển thị trên màn hình cùng lúc.
+                                },
+                                1000: {
+                                    item: 5 //Khi kích thước màn hình đạt 1000px hoặc lớn hơn, thì sẽ hiển thị 5 mục trên mỗi lượt của carousel. Điều này áp dụng cho các màn hình có chiều rộng từ 1000px trở lên, thích hợp cho máy tính và màn hình lớn.
+                                }
+
+                            }
+                        })
+
+                    </script>
+
+                    <!------Trân-------------------------------------------------->
+                    <div class="T_SHIRT">
+                        <div id="T_SHIRT_wrapper">
+                            <div>
+                                <h1 class="text-center fs-3">BEST PANTS-JEANS</h1>
+                            </div>
+                            <ul class="T_SHIRT_products">
+                                <li>
+                                    <div class="product-item">
+                                        <div class="product-top">
+                                            <a href="#" class="product-thumb">
+                                                <img src="../IMGAGE/BEST PANTS-JEANS_1.jpg" alt="" width="300px"
+                                                    height="50%">
+                                            </a>
+                                            <a href="#" class="buy-now">Xem ngay</a>
+                                        </div>
+                                        <div class="product-info">
+                                            <a href="#" class="product-name"
+                                                style="display: inline-block; ">397</a>
+                                            <a href="#" class="product-name2">271 Giá tốt</a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="product-item">
+                                        <div class="product-top">
+                                            <a href="#" class="product-thumb">
+                                                <img src="../IMGAGE/BEST PANTS-JEANS_2.jpg" alt="" width="300px"
+                                                    height="50%">
+                                            </a>
+                                            <a href="#" class="buy-now">Xem ngay</a>
+                                        </div>
+                                        <div class="product-info">
+                                            <a href="#" class="product-name"
+                                                style="display: inline-block; ">397</a>
+                                            <a href="#" class="product-name2">271 Giá tốt</a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="product-item">
+                                        <div class="product-top">
+                                            <a href="#" class="product-thumb">
+                                                <img src="../IMGAGE/BEST PANTS-JEANS_3.jpg" alt="" width="300px"
+                                                    height="50%">
+                                            </a>
+                                            <a href="#" class="buy-now">Xem ngay</a>
+                                        </div>
+                                        <div class="product-info">
+                                            <a href="#" class="product-name7"
+                                                style="display: inline-block; ">397</a>
+
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="product-item">
+                                        <div class="product-top">
+                                            <a href="#" class="product-thumb">
+                                                <img src="../IMGAGE/BEST PANTS-JEANS_4.jpg" alt="" width="300px"
+                                                    height="50%">
+                                            </a>
+                                            <a href="#" class="buy-now">Xem ngay</a>
+                                        </div>
+                                        <div class="product-info">
+                                            <a href="#" class="product-name7"
+                                                style="display: inline-block; ">397</a>
+
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
-                    <ul class="T_SHIRT_products">
-                        <li>
-                            <div class="product-item">
-                                <div class="product-top">
-                                    <a href="./product-detail.html" class="product-thumb">
-                                        <img src="../IMGAGE/Shirt_h1.jpg" alt="" width="300px" height="50%">
-                                    </a>
-                                    <a href="./product-detail.html" class="buy-now">Xem ngay</a>
-                                </div>
-                                <div class="product-info">
-                                    <a href="./product-detail.html" class="product-name7"
-                                        style="display: inline-block; ">255</a>
+                    <!---------------------------------------------------------------------->
+                    <div class="T_SHIRT">
+                        <div id="T_SHIRT_wrapper">
+                            <div>
+                                <h1 class="text-center fs-3">BEST SHORT</h1>
+                            </div>
+                            <ul class="T_SHIRT_products">
+                                <li>
+                                    <div class="product-item">
+                                        <div class="product-top">
+                                            <a href="#" class="product-thumb">
+                                                <img src="../IMGAGE/BEST SHORT_1.jpg" alt="" width="300px" height="50%">
+                                            </a>
+                                            <a href="#" class="buy-now">Xem ngay</a>
+                                        </div>
+                                        <div class="product-info">
+                                            <a href="#" class="product-name"
+                                                style="display: inline-block; ">287</a>
 
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="product-item">
-                                <div class="product-top">
-                                    <a href="./product-detail.html" class="product-thumb">
-                                        <img src="../IMGAGE/Shirt_h2.jpg" alt="" width="300px" height="50%">
-                                    </a>
-                                    <a href="./product-detail.html" class="buy-now">Xem ngay</a>
-                                </div>
-                                <div class="product-info">
-                                    <a href="./product-detail.html" class="product-name"
-                                        style="display: inline-block; ">267</a>
-                                    <a href="./product-detail.html" class="product-name2">180 </a>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="product-item">
-                                <div class="product-top">
-                                    <a href="./product-detail.html" class="product-thumb">
-                                        <img src="../IMGAGE/Shirt_h3.jpg" alt="" width="300px" height="50%">
-                                    </a>
-                                    <a href="./product-detail.html" class="buy-now">Xem ngay</a>
-                                </div>
-                                <div class="product-info">
-                                    <a href="./product-detail.html" class="product-name7"
-                                        style="display: inline-block; ">255</a>
-
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="product-item">
-                                <div class="product-top">
-                                    <a href="./product-detail.html" class="product-thumb">
-                                        <img src="../IMGAGE/Shirt_h4.jpg" alt="" width="300px" height="50%">
-                                    </a>
-                                    <a href="./product-detail.html" class="buy-now">Xem ngay</a>
-                                </div>
-                                <div class="product-info">
-                                    <a href="./product-detail.html" class="product-name7"
-                                        style="display: inline-block; ">357</a>
-
-                                </div>
-                            </div>
-                        </li>
-                    </ul>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="product-item">
+                                        <div class="product-top">
+                                            <a href="#" class="product-thumb">
+                                                <img src="../IMGAGE/BEST SHORT_2.jpg" alt="" width="300px" height="50%">
+                                            </a>
+                                            <a href="#" class="buy-now">Xem ngay</a>
+                                        </div>
+                                        <div class="product-info">
+                                            <a href="#" class="product-name"
+                                                style="display: inline-block; ">257</a>
+                                            <a href="#" class="product-name2">180 Giá tốt</a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="product-item">
+                                        <div class="product-top">
+                                            <a href="#" class="product-thumb">
+                                                <img src="../IMGAGE/BEST SHORT_3.jpg" alt="" width="300px" height="50%">
+                                            </a>
+                                            <a href="#" class="buy-now">Xem ngay</a>
+                                        </div>
+                                        <div class="product-info">
+                                            <a href="#" class="product-name"
+                                                style="display: inline-block; ">257</a>
+                                            <a href="#" class="product-name2">180 Giá tốt</a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="product-item">
+                                        <div class="product-top">
+                                            <a href="#" class="product-thumb">
+                                                <img src="../IMGAGE/BEST SHORT_3.jpg" alt="" width="300px" height="50%">
+                                            </a>
+                                            <a href="#" class="buy-now">Xem ngay</a>
+                                        </div>
+                                        <div class="product-info">
+                                            <a href="#" class="product-name"
+                                                style="display: inline-block; ">257</a>
+                                            <a href="#" class="product-name2">180 Giá tốt</a>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <!-----  Phúc ---------------------------------------------->
-            <div class="T_SHIRT">
-                <div id="T_SHIRT_wrapper">
-                    <div>
-                        <h1 class="text-center fs-3">BEST JACKET</h1>
+
+                <div class="container mb-4">
+                    <div class="row">
+                        <div class="d-flex flex-row align-items-center">
+                            <div class="col-md-6 ps-5" style="margin-left: 7px;">
+                                <h1 class="display-4 text-responsive">SPEED COLLECTION</h1>
+                                <p class="lead text-break"
+                                    style="font-size: 1.25rem; font-weight: 400; display: block;">
+                                    Những kiểu dáng ấn tượng, những phối màu phá cách tạo <br> nên một phong cách thời
+                                    trang đậm chất TAY ĐUA hiện đại~
+                                </p>
+                                <a role="button" href="#" class="btn btn-outline-dark">MUA NGAY BÂY GIỜ</a>
+                            </div>
+                            <div class="col-md-6 pe-5" style="margin-right: 10px;">
+                                <img loading="eager"
+                                    src="https://cmsv2.yame.vn/uploads/4ed6687c-7a11-4781-bdc2-d40e0d87980b/speed-1053x1260-3.jpg?quality=80&amp;w=0&amp;h=0"
+                                    class="img-fluid" alt="SPEED COLLECTION">
+                            </div>
+                        </div>
                     </div>
-                    <ul class="T_SHIRT_products">
-                        <li>
-                            <div class="product-item">
-                                <div class="product-top">
-                                    <a href="./product-detail.html" class="product-thumb">
-                                        <img src="../IMGAGE/BEST JACKET_1.jpg" alt="" width="300px" height="50%">
-                                    </a>
-                                    <a href="./product-detail.html" class="buy-now">Xem ngay</a>
-                                </div>
-                                <div class="product-info">
-                                    <a href="./product-detail.html" class="product-name"
-                                        style="display: inline-block; ">397</a>
-                                    <a href="./product-detail.html" class="product-name2">318 Giá tốt</a>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="product-item">
-                                <div class="product-top">
-                                    <a href="./product-detail.html" class="product-thumb">
-                                        <img src="../IMGAGE/BEST JACKET_2.jpg" alt="" width="300px" height="50%">
-                                    </a>
-                                    <a href="./product-detail.html" class="buy-now">Xem ngay</a>
-                                </div>
-                                <div class="product-info">
-                                    <a href="./product-detail.html" class="product-name"
-                                        style="display: inline-block; ">397</a>
-                                    <a href="./product-detail.html" class="product-name2">278 Giá tốt</a>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="product-item">
-                                <div class="product-top">
-                                    <a href="./product-detail.html" class="product-thumb">
-                                        <img src="../IMGAGE/BEST JACKET_3.jpg" alt="" width="300px" height="50%">
-                                    </a>
-                                    <a href="./product-detail.html" class="buy-now">Xem ngay</a>
-                                </div>
-                                <div class="product-info">
-                                    <a href="./product-detail.html" class="product-name"
-                                        style="display: inline-block; ">397</a>
-                                    <a href="./product-detail.html" class="product-name2">318 Giá tốt</a>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="product-item">
-                                <div class="product-top">
-                                    <a href="./product-detail.html" class="product-thumb">
-                                        <img src="../IMGAGE/BEST JACKET_4.jpg" alt="" width="300px" height="50%">
-                                    </a>
-                                    <a href="./product-detail.html" class="buy-now">Xem ngay</a>
-                                </div>
-                                <div class="product-info">
-                                    <a href="./product-detail.html" class="product-name7"
-                                        style="display: inline-block; ">597</a>
-
-                                </div>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <!------------------------------------------------------------>
-            <div id="slide-sideways-00">
-                <section class="slider owl-carousel owl-theme">
-                    <div class="slider-item slider-item-one1">
-
-                    </div>
-                    <div class="slider-item slider-item-two2">
-
-                    </div>
-                    <div class="slider-item slider-item-three3">
-
-                    </div>
-                    <div class="slider-item slider-item-four4">
-
-                    </div>
-                    <div class="slider-item slider-item-five5">
-
-                    </div>
-                </section>
-            </div>
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-            <script src="../OwlCarousel2-2.3.4/dist/owl.carousel.min.js "></script>
-            <script>
-                $('.owl-carousel').owlCarousel({
-                    loop: true,
-                    margin: 10,
-                    nav: true,
-                    responsive: {
-                        0: {
-                            items: 1
-                        },
-                        600: {
-                            items: 3
-                        },
-                        1000: {
-                            items: 3
-                        }
-                    }
-                })
-            </script>
-
-            <!------Trân-------------------------------------------------->
-            <div class="T_SHIRT">
-                <div id="T_SHIRT_wrapper">
-                    <div>
-                        <h1 class="text-center fs-3">BEST PANTS-JEANS</h1>
-                    </div>
-                    <ul class="T_SHIRT_products">
-                        <li>
-                            <div class="product-item">
-                                <div class="product-top">
-                                    <a href="./product-detail.html" class="product-thumb">
-                                        <img src="../IMGAGE/BEST PANTS-JEANS_1.jpg" alt="" width="300px" height="50%">
-                                    </a>
-                                    <a href="./product-detail.html" class="buy-now">Xem ngay</a>
-                                </div>
-                                <div class="product-info">
-                                    <a href="./product-detail.html" class="product-name"
-                                        style="display: inline-block; ">397</a>
-                                    <a href="./product-detail.html" class="product-name2">271 Giá tốt</a>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="product-item">
-                                <div class="product-top">
-                                    <a href="./product-detail.html" class="product-thumb">
-                                        <img src="../IMGAGE/BEST PANTS-JEANS_2.jpg" alt="" width="300px" height="50%">
-                                    </a>
-                                    <a href="./product-detail.html" class="buy-now">Xem ngay</a>
-                                </div>
-                                <div class="product-info">
-                                    <a href="./product-detail.html" class="product-name"
-                                        style="display: inline-block; ">397</a>
-                                    <a href="./product-detail.html" class="product-name2">271 Giá tốt</a>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="product-item">
-                                <div class="product-top">
-                                    <a href="./product-detail.html" class="product-thumb">
-                                        <img src="../IMGAGE/BEST PANTS-JEANS_3.jpg" alt="" width="300px" height="50%">
-                                    </a>
-                                    <a href="./product-detail.html" class="buy-now">Xem ngay</a>
-                                </div>
-                                <div class="product-info">
-                                    <a href="./product-detail.html" class="product-name7"
-                                        style="display: inline-block; ">397</a>
-
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="product-item">
-                                <div class="product-top">
-                                    <a href="./product-detail.html" class="product-thumb">
-                                        <img src="../IMGAGE/BEST PANTS-JEANS_4.jpg" alt="" width="300px" height="50%">
-                                    </a>
-                                    <a href="./product-detail.html" class="buy-now">Xem ngay</a>
-                                </div>
-                                <div class="product-info">
-                                    <a href="./product-detail.html" class="product-name7"
-                                        style="display: inline-block; ">397</a>
-
-                                </div>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <!---------------------------------------------------------------------->
-            <div class="T_SHIRT">
-                <div id="T_SHIRT_wrapper">
-                    <div>
-                        <h1 class="text-center fs-3">BEST SHORT</h1>
-                    </div>
-                    <ul class="T_SHIRT_products">
-                        <li>
-                            <div class="product-item">
-                                <div class="product-top">
-                                    <a href="./product-detail.html" class="product-thumb">
-                                        <img src="../IMGAGE/BEST SHORT_1.jpg" alt="" width="300px" height="50%">
-                                    </a>
-                                    <a href="./product-detail.html" class="buy-now">Xem ngay</a>
-                                </div>
-                                <div class="product-info">
-                                    <a href="./product-detail.html" class="product-name"
-                                        style="display: inline-block; ">287</a>
-
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="product-item">
-                                <div class="product-top">
-                                    <a href="./product-detail.html" class="product-thumb">
-                                        <img src="../IMGAGE/BEST SHORT_2.jpg" alt="" width="300px" height="50%">
-                                    </a>
-                                    <a href="./product-detail.html" class="buy-now">Xem ngay</a>
-                                </div>
-                                <div class="product-info">
-                                    <a href="./product-detail.html" class="product-name"
-                                        style="display: inline-block; ">257</a>
-                                    <a href="./product-detail.html" class="product-name2">180 Giá tốt</a>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="product-item">
-                                <div class="product-top">
-                                    <a href="./product-detail.html" class="product-thumb">
-                                        <img src="../IMGAGE/BEST SHORT_3.jpg" alt="" width="300px" height="50%">
-                                    </a>
-                                    <a href="./product-detail.html" class="buy-now">Xem ngay</a>
-                                </div>
-                                <div class="product-info">
-                                    <a href="./product-detail.html" class="product-name"
-                                        style="display: inline-block; ">257</a>
-                                    <a href="./product-detail.html" class="product-name2">180 Giá tốt</a>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="product-item">
-                                <div class="product-top">
-                                    <a href="./product-detail.html" class="product-thumb">
-                                        <img src="../IMGAGE/BEST SHORT_3.jpg" alt="" width="300px" height="50%">
-                                    </a>
-                                    <a href="./product-detail.html" class="buy-now">Xem ngay</a>
-                                </div>
-                                <div class="product-info">
-                                    <a href="./product-detail.html" class="product-name"
-                                        style="display: inline-block; ">257</a>
-                                    <a href="./product-detail.html" class="product-name2">180 Giá tốt</a>
-                                </div>
-                            </div>
-                        </li>
-                    </ul>
                 </div>
             </div>
         </div>
-
         <!---------------------------------------------------------------------->
         <div id="footer">
             <div class="footer-layout">
@@ -952,24 +824,24 @@
                     <h3>Hãy kết nối với chúng tôi </h3>
                     <ul id="ft-1">
                         <li>
-                            <a href="#">
-                                <i class="fab fa-edge"></i>
+                            <a href="https://instagram.com/thanhle.6335?igshid=NGVhN2U2NjQ0Yg%3D%3D&utm_source=qr">
+                                <i class="fab fa-instagram"></i>
                             </a>
                         </li>
                         <li>
-                            <a href="#">
-                                <i class="fab fa-firefox"></i>
+                            <a href="https://www.facebook.com/profile.php?id=100015046422967&mibextid=2JQ9oc">
+                                <i class="fab fa-facebook"></i>
                             </a>
                         </li>
                         <li>
-                            <a href="#">
-                                <i class="fab fa-chrome"></i>
+                            <a href="https://www.youtube.com/channel/UCh_yjDmw2r7_-c2tnYzULtQ">
+                                <i class="fab fa-youtube"></i>
                             </a>
 
                         </li>
                         <li>
-                            <a href="#">
-                                <i class="fab fa-opera"></i>
+                            <a href="https://www.tiktok.com/@thanhle02032003?_t=8gdungESj9c&_r=1">
+                                <i class="fab fa-tiktok"></i>
                             </a>
                         </li>
                     </ul>

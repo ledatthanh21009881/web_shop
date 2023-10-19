@@ -1,20 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap');
-
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
+
 html {
-    font-family: Arial, Helvetica, sans-serif; /*đây là font chữ ko chân*/
+    font-family: Arial, Helvetica, sans-serif;
+    /*đây là font chữ ko chân*/
     /*đây là thuộc tính để xét font chữ cho cả website*/
 }
+
+
 /*h1:hover{
     color: aquamarine;
 }
 h1{
     color: black;
 }*/
+
+
 /*
     Quy tắc 1 khi làm 1 trang web
     1. Từ ngoài vào trong
@@ -22,6 +27,8 @@ h1{
     3. Từ tổng quan đến chi tiết
 
 */
+
+
 /*
     Quy tắc 2 khi làm 1 trang web
     1. Vị trí
@@ -30,65 +37,84 @@ h1{
     4. Kiểu dáng ( kiểu chữ, hình tròn, vuông,..)
 
 */
-#main {
+
+.subnav1 {
+    display: none; /* Ẩn danh sách con khi không hover */
+    position: absolute; /* Thiết lập vị trí tuyệt đối */
+    z-index: 1; /* Đặt z-index lớn hơn các phần tử khác */
 
 }
-#logo{
-    float: left;
+li:hover .subnav1 {
+    display: block; /* Hiển thị danh sách con khi hover vào thẻ li cha */
+}
+
+.class2k3{
+    padding: 10px 0 ;  display: flex;
+        justify-content: center;
+        align-items: center;
+}
+#logo {
     height: 40%;
     padding-top: 5px;
-    padding-left: 15%;
     transition-duration: .3s;
-
 }
-#logo img:hover{
+
+#logo img:hover {
     color: #ffee10;
     box-shadow: 0 0 35px #ffee10;
     text-shadow: 0 0 35px #ffee10;
-    transform: scale(1.1); 
+    transform: scale(1.1);
     background: #ffee10;
     transition: .5s;
     transform: scale(.9);
-   
 }
+
 #header {
-    height: 100px;
     background-color: #000;
 }
 
-
 #nav {
     display: inline-block;
-    
 }
 
-#nav, .subnav2 { /* dùng dấu , để cho 2 thẻ #nav và .subnav cùng kế thừa 
+#nav,
+.subnav2 {
+    /* dùng dấu , để cho 2 thẻ #nav và .subnav cùng kế thừa 
                     1 thuộc tính dưới đây*/
-    list-style-type: none; /*dùng để bỏ dấu chấm của thẻ ul*/
-}
-#nav, .subnav1 { /* dùng dấu , để cho 2 thẻ #nav và .subnav cùng kế thừa 
-    1 thuộc tính dưới đây*/
-list-style-type: none; /*dùng để bỏ dấu chấm của thẻ ul*/
+    list-style-type: none;
+    /*dùng để bỏ dấu chấm của thẻ ul*/
 }
 
-#nav > li {
-    display: inline-block; /*cái này dùng để đưa 5 cái li lên cùng 1 dòng*/
+#nav,
+.subnav1 {
+    /* dùng dấu , để cho 2 thẻ #nav và .subnav cùng kế thừa 
+    1 thuộc tính dưới đây*/
+    list-style-type: none;
+    /*dùng để bỏ dấu chấm của thẻ ul*/
+}
+
+#nav>li {
+    display: inline-block;
+    /*cái này dùng để đưa 5 cái li lên cùng 1 dòng*/
 }
 
 #nav li {
     position: relative;
 }
 
-#nav > li > a {
+#nav>li>a {
     color: #fff;
     text-transform: uppercase;
 }
 
-#nav li a{
-    text-decoration: none; /* cái này dùng để bỏ gạch chân mặc định*/
-    line-height: 50px; /*cái này dùng để cho cái hai lai khi bôi đen sẽ bằng
+#nav li a {
+    text-decoration: none;
+    /* cái này dùng để bỏ gạch chân mặc định*/
+    line-height: 50px;
+    /*cái này dùng để cho cái hai lai khi bôi đen sẽ bằng
                           height của header*/
-    padding: 0 24px; /* dùng để giãn khoảng cách giữa các chữ trong id=nav*/
+    padding: 0 24px;
+    /* dùng để giãn khoảng cách giữa các chữ trong id=nav*/
     display: block;
 }
 
@@ -100,65 +126,151 @@ list-style-type: none; /*dùng để bỏ dấu chấm của thẻ ul*/
     display: block;
 }
 
-#nav > li:hover > a,
+#nav>li:hover>a,
 #nav .subnav2 li:hover a {
     color: #000;
     background-color: #ccc;
 }
-#nav > li:hover > a,
+
+#nav>li:hover>a,
 #nav .subnav1 li:hover a {
     color: #000;
     background-color: #ccc;
 }
 
 #nav .subnav2 {
-    display: none; /*cái này dùng để ẩn thằng con subnav đi*/
+    display: none;
+    /*cái này dùng để ẩn thằng con subnav đi*/
     min-width: 260px;
     position: absolute;
     top: 100%;
     left: 0;
     background-color: #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-    
-}
-#nav .subnav1 {
-    display: none; /*cái này dùng để ẩn thằng con subnav đi*/
-    min-width: 260px;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    background-color: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-    
 }
 
+#nav .subnav1 {
+    display: none;
+    /*cái này dùng để ẩn thằng con subnav đi*/
+    min-width: 260px;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    list-style: none;
+    padding-left: 0;
+}
 #nav .subnav2 a {
     color: #000;
     padding: 0 12px;
     line-height: 38px;
 }
+
 #nav .subnav1 a {
     color: #000;
     padding: 0 12px;
     line-height: 38px;
+    
 }
+
 #nav .nav-arrow-down {
     font-size: 14px;
 }
 
-#header .search-btn {
-    float: right;
-    padding: 0 21px;
-    
-}
+
 
 #header .search-btn:hover {
     cursor: pointer;
     background-color: #f44336;
 }
 
-#header .search-icon {
-    color: #fff;
-    font-size: 20px;
-    line-height: 46px;
-}
+/*------------------*/
+
+
+
+.container {
+            position: relative;
+            box-sizing: border-box;
+            width: fit-content;
+        }
+
+        .mainbox {
+            box-sizing: border-box;
+            position: relative;
+            width: 230px;
+            height: 40px;
+            display: flex;
+            flex-direction: row-reverse;
+            align-items: center;
+            justify-content: center;
+            border-radius: 160px;
+            background-color: rgb(255, 255, 255);
+            transition: all 0.3s ease;
+        }
+
+        .checkbox:focus {
+            border: none;
+            outline: none;
+        }
+
+        .checkbox:checked {
+            right: 10px;
+        }
+
+        .checkbox:checked~.mainbox {
+            width: 50px;
+        }
+
+        .checkbox:checked~.mainbox .search_input {
+            width: 0;
+            height: 0px;
+        }
+
+        .checkbox:checked~.mainbox .iconContainer {
+            padding-right: 8px;
+        }
+
+        .checkbox {
+            box-sizing: border-box;
+            width: 30px;
+            height: 30px;
+            position: absolute;
+            right: 17px;
+            top: 10px;
+            z-index: 9;
+            cursor: pointer;
+            appearance: none;
+        }
+
+        .search_input {
+            box-sizing: border-box;
+            height: 100%;
+            width: 170px;
+            background-color: transparent;
+            border: none;
+            outline: none;
+            padding-bottom: 4px;
+            padding-left: 10px;
+            font-size: 1em;
+            color: black;
+            transition: all 0.3s ease;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+
+        .search_input::placeholder {
+            color: rgba(255, 255, 255, 0.776);
+        }
+
+        .iconContainer {
+            box-sizing: border-box;
+            padding-top: 5px;
+            width: fit-content;
+            transition: all 0.3s ease;
+        }
+
+        .search_icon {
+            box-sizing: border-box;
+            fill: black;
+            font-size: 1.3em;
+        }
